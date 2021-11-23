@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
           token: ${{ github.token }}
       - name: tfsec
         run: |
@@ -33,7 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
           token: ${{ github.token }}
       - name: install checkov
         run: |
@@ -53,7 +53,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
           token: ${{ github.token }}
       - uses: actions/setup-python@v2
         with:
@@ -81,7 +81,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
           token: ${{ github.token }}
       - name: install kics
         run: |

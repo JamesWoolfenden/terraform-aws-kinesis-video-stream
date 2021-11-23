@@ -1,6 +1,6 @@
 # terraform-aws-kinesis-stream
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/workflows/Verify%20and%20Bump/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-kinesis-stream.svg)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-kinesis-stream.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
