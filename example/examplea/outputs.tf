@@ -1,3 +1,3 @@
 output "kinesis" {
-  value=module.kinesis.kinesis
+  value = module.kinesis.kinesis
 }

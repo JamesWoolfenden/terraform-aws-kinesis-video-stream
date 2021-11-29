@@ -1,3 +1,3 @@
 module "kinesis" {
-  source      = "../../"
+  source = "../../"
 }
