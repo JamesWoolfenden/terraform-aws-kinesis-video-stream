@@ -80,16 +80,15 @@ module "kinesis" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name                                             | Version |
-| ------------------------------------------------ | ------- |
-| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
@@ -97,23 +96,22 @@ No modules.
 
 ## Resources
 
-| Name                                                                                                                              | Type     |
-| --------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| Name | Type |
+|------|------|
 | [aws_kinesis_video_stream.flow](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kinesis_video_stream) | resource |
 
 ## Inputs
 
-| Name                                                            | Description | Type                                                                                                                               | Default                                                                                                                                                                  | Required |
-| --------------------------------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------: |
-| <a name="input_kms_key_id"></a> [kms_key_id](#input_kms_key_id) | n/a         | `string`                                                                                                                           | `"alias/aws/kinesis"`                                                                                                                                                    |    no    |
-| <a name="input_stream"></a> [stream](#input_stream)             | n/a         | <pre>object({<br> name = string<br> data_retention_in_hours = number<br> device_name = string<br> media_type = string<br> })</pre> | <pre>{<br> "data_retention_in_hours": 1,<br> "device_name": "kinesis-video-device-name",<br> "media_type": "video/h264",<br> "name": "terraform-kinesis-test"<br>}</pre> |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | n/a | `string` | n/a | yes |
+| <a name="input_stream"></a> [stream](#input\_stream) | n/a | <pre>object({<br>    name                    = string<br>    data_retention_in_hours = number<br>    device_name             = string<br>    media_type              = string<br>  })</pre> | <pre>{<br>  "data_retention_in_hours": 1,<br>  "device_name": "kinesis-video-device-name",<br>  "media_type": "video/h264",<br>  "name": "terraform-kinesis-test"<br>}</pre> | no |
 
 ## Outputs
 
-| Name                                                     | Description |
-| -------------------------------------------------------- | ----------- |
-| <a name="output_kinesis"></a> [kinesis](#output_kinesis) | n/a         |
-
+| Name | Description |
+|------|-------------|
+| <a name="output_kinesis"></a> [kinesis](#output\_kinesis) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects

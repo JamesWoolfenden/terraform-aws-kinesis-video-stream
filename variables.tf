@@ -1,5 +1,5 @@
 variable "kms_key_id" {
-  default = "alias/aws/kinesis"
+  type = string
 }
 
 
