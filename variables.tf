@@ -1,8 +1,6 @@
 variable "kms_key_id" {
   type = string
 }
-
-
 variable "stream" {
   type = object({
     name                    = string
