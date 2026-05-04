@@ -138,11 +138,12 @@ resource "aws_iam_policy" "terraform_pike" {
                 "kinesisvideo:DeleteStream",
                 "kinesisvideo:DescribeStream",
                 "kinesisvideo:ListTagsForStream",
-                "kinesisvideo:TagStream",
-                "kinesisvideo:UntagStream",
+                "kinesisvideo:UpdateDataRetention",
                 "kinesisvideo:UpdateStream"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
