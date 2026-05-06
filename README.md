@@ -1,13 +1,11 @@
-# terraform-aws-kinesis-stream
+# terraform-aws-kinesis-video-stream
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/workflows/Verify%20and%20Bump/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream)
-[![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-kinesis-stream.svg)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/releases/latest)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-kinesis-stream.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/releases/latest)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-kinesis-video-stream/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-video-stream)
+[![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-kinesis-video-stream.svg)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-video-stream/releases/latest)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-kinesis-video-stream.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-video-stream/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-kinesis-stream/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-kinesis-stream&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-kinesis-stream/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-kinesis-stream&benchmark=INFRASTRUCTURE+SECURITY)
 
 This has an example for how to add a custom Checkov check:
 Create a folder for your checks:
@@ -87,8 +85,8 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| ---- | ------- |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.43.0 |
 
 ## Modules
 
@@ -97,20 +95,20 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_kinesis_video_stream.flow](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kinesis_video_stream) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | n/a | `string` | n/a | yes |
-| <a name="input_stream"></a> [stream](#input\_stream) | n/a | <pre>object({<br>    name                    = string<br>    data_retention_in_hours = number<br>    device_name             = string<br>    media_type              = string<br>  })</pre> | <pre>{<br>  "data_retention_in_hours": 1,<br>  "device_name": "kinesis-video-device-name",<br>  "media_type": "video/h264",<br>  "name": "terraform-kinesis-test"<br>}</pre> | no |
+| <a name="input_stream"></a> [stream](#input\_stream) | n/a | <pre>object({<br/>    name                    = string<br/>    data_retention_in_hours = number<br/>    device_name             = string<br/>    media_type              = string<br/>  })</pre> | <pre>{<br/>  "data_retention_in_hours": 1,<br/>  "device_name": "kinesis-video-device-name",<br/>  "media_type": "video/h264",<br/>  "name": "terraform-kinesis-test"<br/>}</pre> | no |
 
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_kinesis"></a> [kinesis](#output\_kinesis) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
@@ -163,13 +161,13 @@ Check out these related projects.
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/issues).
+File a GitHub [issue](https://github.com/JamesWoolfenden/terraform-aws-kinesis-video-stream/issues).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-kinesis-video-stream/issues) to report any bugs or file feature requests.
 
 ## Copyrights
 
